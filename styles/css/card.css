@@ -1,0 +1,280 @@
+/* Category */
+.category {
+  margin-top: 30px;
+}
+
+.category-item {
+  position: relative;
+  width: 100%;
+}
+
+.category-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* UnderLine Arrivals */
+.text-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 62px;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background-color: black;
+  top: 6px;
+  width: 32%;
+}
+
+.line:first-child {
+  left: 0;
+}
+
+.line:last-child {
+  right: 0;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.view {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+
+.view::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+/* Product */
+.product {
+  position: relative;
+}
+
+/* Icon heart */
+.product__image {
+  position: relative;
+  display: inline-block;
+}
+
+.product__icon {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 10px;
+  right: 25px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.product__icon i {
+  font-weight: normal;
+}
+/* End Icon heart */
+
+/* Circle */
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b7b7b7;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.gray {
+  background-color: #494949;
+}
+
+.gray-light {
+  background-color: #e8e8e8;
+}
+
+.cyan-light {
+  background-color: #13c89c;
+}
+
+.blue {
+  background-color: #4b6cc0;
+}
+
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.yellow {
+  background-color: #fff100;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+/* CSS CARD */
+.card {
+  margin-top: 10px;
+}
+.card-img-top.img-2 {
+  box-sizing: border-box;
+  height: 286px;
+}
+
+.card-img-top.img-3 {
+  box-sizing: border-box;
+  height: 218px;
+}
+
+.card .card-icon {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.card .card-icon i {
+  font-weight: normal;
+}
+
+.card .card-body {
+  text-align: center;
+}
+.card .card-title {
+  margin-top: 20px;
+  color: #969696;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card .card-text {
+  margin-top: 15px;
+  color: #232323;
+  font-size: 12px;
+}
+
+.card-price {
+  margin-top: 20px;
+  color: #494949;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-color {
+  display: flex;
+  margin-top: 18px;
+}
+
+.card-color span {
+  color: #b2b2b2;
+}
+
+.card__buton-show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 62px 0 70px 0;
+}
+
+.card__buton-show-more a.btn-show-more {
+  margin: auto;
+  font-size: 16px;
+  width: 300px;
+  height: 45px;
+  border: 1px solid #b8b8b8;
+  color: #232323;
+  background-color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card__buton-show-more a.btn-show-more:hover,
+.card a.btn.btn-add:hover {
+  color: #fff;
+  background-color: #232323;
+}
+
+.card a.btn.btn-add {
+  width: 240px;
+  max-height: 45px;
+  margin: 16px auto 0 auto;
+  font-size: 16px;
+  border: 1px solid #000;
+  color: #232323;
+  background-color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card a.btn.btn-submit {
+  max-width: 240px;
+  max-height: 45px;
+  margin: 16px auto 0 auto;
+  font-size: 14px;
+  background-color: #232323;
+  color: #fff;
+  border: 1px solid #b8b8b8;
+  text-align: center;
+}
+
+.card .card-size {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.card .card-size p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.card .card-size span {
+  position: relative;
+}
+
+.card .card-size span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  content: "";
+}

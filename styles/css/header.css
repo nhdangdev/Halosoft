@@ -1,0 +1,152 @@
+header.header {
+  height: 180px;
+}
+
+/* Banner */
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  overflow: hidden;
+}
+
+.header-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 213, 213, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-banner:hover::before {
+  opacity: 1;
+}
+
+.header-shoppingCart {
+  padding-bottom: 18px;
+  width: 100%;
+}
+
+.header__cart-notice {
+  background-color: #ffe5e5;
+  border-radius: 50%;
+  color: #000;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-left: 10px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 1.2rem;
+}
+
+.header img.header-logo {
+  padding-top: 35px;
+}
+
+/* Topnav */
+.top-nav__shopping p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 30px 0 10px 150px;
+  margin: 0;
+}
+
+.top-nav__description {
+  color: #000;
+  font-size: 12px;
+}
+.top-nav__description:hover {
+  opacity: 0.8;
+  color: #000;
+}
+
+/* Navbar */
+.nav ul li a.nav-link:hover {
+  color: red;
+}
+
+.nav ul li {
+  margin-top: -5px;
+}
+
+#navbarNav {
+  background: #232323;
+  display: block;
+  height: 44px;
+}
+
+a.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 0;
+  margin-right: 25px;
+}
+
+/* Favorite */
+.nav-item__favorite {
+  position: absolute;
+  width: 33px;
+  height: 21px;
+  border-radius: 2px;
+  z-index: 1;
+  top: -15px;
+}
+.nav-item__favorite.color-pink-light {
+  left: 33.2%;
+  background-color: #ef6454;
+}
+.nav-item__favorite.color-cyan-light {
+  left: 43.2%;
+  background-color: #06bfe2;
+}
+.nav-item__favorite.color-yellow-light {
+  left: 51.5%;
+  background-color: #ffbb49;
+}
+
+.nav-item__favorite::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  z-index: 2;
+}
+
+.nav-item__favorite.color-pink-light::after {
+  border-color: #ef6454 transparent transparent transparent;
+}
+
+.nav-item__favorite.color-cyan-light::after {
+  border-color: #06bfe2 transparent transparent transparent;
+}
+
+.nav-item__favorite.color-yellow-light::after {
+  border-color: #ffbb49 transparent transparent transparent;
+}
+
+.nav-item__favorite span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
